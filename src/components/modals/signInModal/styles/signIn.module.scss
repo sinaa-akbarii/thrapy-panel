@@ -1,0 +1,218 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.64);
+  z-index: 99999;
+  :global {
+    .modal-dialog {
+      min-height: 100vh;
+      max-width: 28.4375rem;
+      margin: 0 auto;
+    }
+    .modal-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background: #1d2333;
+      width: 28.4375rem;
+      // height: 26.625rem;
+      border-radius: 1rem;
+      padding: 1.5625rem 2rem 2rem;
+      border: none;
+    }
+  }
+}
+.form {
+  &Top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 1.4rem;
+    &Title {
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 0.5rem;
+      text-align: center;
+    }
+    &Section {
+      display: flex;
+      justify-content: flex-end;
+      &Button {
+        width: 28px;
+        height: 28px;
+        background-color: #0c0e14;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+  }
+  &Main {
+    // height: 22.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    &Input {
+      height: 31%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+      &Button {
+        color: 8978cc;
+        background: none;
+        position: absolute;
+        left: 0rem;
+        top: 0rem;
+        color: #8978cc;
+      }
+
+      &Label {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        text-align: right;
+        color: #ffffff;
+      }
+      &Group {
+        background: #161b27;
+        border: #c4c4c4 0.0625rem solid;
+        border-radius: 0.5rem;
+        margin-top: 0.6rem;
+        width: 20.4375rem;
+        &Input {
+          background: transparent;
+          border: none;
+          width: 17.9375rem;
+          height: 3rem;
+          font-size: 1rem;
+          font-weight: 500;
+          padding: 0rem 1rem;
+          color: #c4c4c4;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  &Bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    flex-direction: column;
+    &Button {
+      color: #1d2333;
+      background: #00f0ff;
+      font-size: 0.875rem;
+      font-weight: 700;
+      width: 20.4375rem;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+      border: none;
+      margin-top: 0.4rem;
+    }
+  }
+  .inputIcon {
+    display: inline-block;
+    animation: spin 2s linear infinite;
+  }
+}
+.formBottomButtonCancel {
+  color: red;
+  background: transparent;
+  font-size: 0.875rem;
+  font-weight: 700;
+  width: 20.4375rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid red;
+  margin-top: 0.4rem;
+}
+@media screen and (max-width: 420px) {
+  .modal {
+    width: 100%;
+    :global {
+      .modal-dialog {
+        align-items: flex-end;
+        justify-content: unset;
+        width: 100%;
+        max-width: 100%;
+        height: 92%;
+        margin: 0 !important;
+      }
+      .modal-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        border-radius: 0rem 0rem 0rem 0rem;
+        padding: 0.8125rem 1.5rem 4.75rem 1.5rem;
+      }
+    }
+  }
+  .form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .formTop {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0.8125rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .formTopTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 0.5rem;
+    text-align: center;
+    margin: 0rem auto;
+  }
+
+  .formMainInputLabel {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: right;
+  }
+
+  .formMainInputGroupInput {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1rem;
+  }
+
+  .formMain {
+    margin-bottom: auto;
+  }
+
+  .formBottomButtonDisabled {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .formBottomButton {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+}
+.error {
+  font-size: 0.75rem;
+  color: red;
+  margin-top: 0.3125rem;
+}

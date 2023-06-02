@@ -1,0 +1,25 @@
+
+  .header tr th {
+    padding-bottom: 1.5rem;
+    vertical-align: middle;
+  }
+
+  .body tr td {
+    font-size: 1.125rem;
+    line-height: 1.22rem;
+    color: rgb(100 116 139);
+    vertical-align: middle;
+    border-bottom: none;
+    padding: 1.5rem 0;
+  }
+  
+
+  @media screen and (max-width:980px){
+    .table{
+     width: 980px;
+    }
+    .tableContainer{
+      width: 980px;
+      overflow: auto;
+    }
+  }

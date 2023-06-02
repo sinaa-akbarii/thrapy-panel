@@ -1,0 +1,71 @@
+@import 'assets/styles/helpers/mixins.scss';
+@import 'assets/styles/helpers/variables.scss';
+
+.toastContainer {
+  @include flex(space-between, center, row);
+  width: auto !important;
+  height: 3.75rem !important;
+  border-radius: 1rem !important;
+  position: relative !important;
+  padding: 0.75rem 1rem 0.75rem 0.75rem !important;
+  box-shadow: none !important;
+  z-index: 999 !important;
+  bottom: 1.25rem !important;
+  right: 1.25rem !important;
+}
+.toastBody {
+  @include flex(space-between, center, row);
+  width: 100% !important;
+}
+.success {
+  border: solid 0.125rem #38a69d !important;
+  background-color: rgba(56, 165, 157, 0.3) !important;
+  .icon_container {
+    background-color: #38a59d !important;
+  }
+}
+.error {
+  border: solid 0.125rem #ff1e55 !important;
+  background-color: rgba(255, 30, 85, 0.3) !important;
+  .icon_container {
+    background-color: #ff1e55 !important;
+  }
+}
+.warning {
+  border: solid 0.125rem #ffb703 !important;
+  background-color: rgba(255, 183, 3, 0.3) !important;
+  .icon_container {
+    background-color: #ffb703 !important;
+  }
+}
+.info {
+  border: solid 0.125rem #3683f6 !important;
+  background-color: rgba(54, 131, 246, 0.1) !important;
+  .icon_container {
+    background-color: #3683f6 !important;
+  }
+}
+.right {
+  @include flex-center-vert;
+}
+.icon {
+  &_container {
+    @include box(2.25rem, 2.25rem, false, 50%);
+    @include flex-center;
+    padding: 0.5625rem !important;
+    flex-shrink: 0 !important;
+    margin-right: 0.75rem !important;
+  }
+}
+.txt {
+  @include font-style(1.25rem, $dark_gray, 400, 1.5rem);
+}
+
+.closeBtn {
+  @include box(1.25rem);
+  @include flex-center;
+  font-size: 1.25rem !important;
+  color: $light_gray !important;
+  padding: 0 !important;
+  margin-left: 3rem !important;
+}

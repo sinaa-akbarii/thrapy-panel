@@ -1,0 +1,103 @@
+.cardContainer{
+    width:31%;
+}
+.tabletResponsive{
+  display: none;
+  margin-top: 1rem;
+  
+}
+.tabletResponsiveContainer{
+  width:49%;
+}
+.coinsWrapperTablet{
+  width:49%;
+  display: none;
+  height: auto;
+  border: 1px solid  rgb(31 41 55);
+  border-radius: 8px;
+  padding: 0;
+}
+.wrapper:not(:last-child){
+    border-bottom: solid 2px rgba(31 ,41, 55,0.2);
+  }
+
+  .cardTitle{
+    display: flex;
+    height: 35px;
+    background-color: rgba(31 ,41, 55,0.2);
+    padding:5px 10px;
+}
+.coinsWrapper{
+    width:31%;
+    height: auto;
+    border: 1px solid  rgb(31 41 55);
+    border-radius: 8px;
+}
+
+.itemContainer{
+    height: 335px;
+    overflow-y: auto;
+}
+
+.wrapper:not(:last-child){
+    border-bottom: solid 2px rgba(31 ,41, 55,0.2);
+  }
+  .plus svg{
+    width: 20px;
+    height: 20px; 
+  }
+  .plus path{
+    fill: #C4C4C4;
+  }
+  .btn{
+      width: 25px;
+    height: 25px;  
+    display: flex;
+  }
+  .btn svg{
+    width: 30px;
+    height: 25px;
+  }
+  .historyWrapper{
+    width: 67%;
+    height: 335px;
+  }
+
+  @media screen and (max-width:980px){
+    .cardContainer{
+      width:49%;
+  }
+  .thirdPart{
+    display: none;
+  }
+  .tabletResponsive{
+    display: flex;
+    justify-content: space-between;
+  }
+  .coinsWrapperTablet{
+    display: block;
+  }
+  .coinsWrapper{
+    display: none;
+  }
+  .historyWrapper{
+    width: 100%;
+  }
+  }
+
+  @media screen and (max-width:650px){
+    .cardContainer{
+      width:100%;
+      margin-top: 1rem;
+  }
+  .tabletResponsiveContainer{
+    width: 100%;
+  }
+  .coinsWrapperTablet{
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .historyWrapper{
+    margin-bottom: 2rem;
+  }
+  }
